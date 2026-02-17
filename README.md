@@ -77,13 +77,7 @@ MyWox-React/
 - MongoDB (local or Atlas connection)
 - npm or yarn
 
-### Step 1: Clone and Navigate
-
-```bash
-cd MyWox-React
-```
-
-### Step 2: Backend Setup
+### Step 1: Backend Setup
 
 ```bash
 cd server
@@ -102,7 +96,7 @@ npm run dev
 
 Backend will run on: `http://localhost:5000`
 
-### Step 3: Frontend Setup
+### Step 2: Frontend Setup
 
 Open a new terminal:
 
@@ -140,16 +134,6 @@ Frontend will run on: `http://localhost:3000`
 - **Error Handling**: User-friendly error messages
 - **Toast Notifications**: Success and error alerts
 
-## 💾 Environment Variables
-
-**Backend (.env):**
-```
-MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/mywox
-JWT_SECRET=your_secret_key_here
-PORT=5000
-NODE_ENV=development
-```
-
 ## 🚀 Building for Production
 
 ### Backend:
@@ -184,23 +168,5 @@ npm run build
 - ✅ Environment variables for sensitive data
 - ✅ Role-based access control (user/admin)
 
-## 🐛 Troubleshooting
-
-### MongoDB Connection Error
-- Ensure MongoDB is running locally or use MongoDB Atlas
-- Check connection string in `.env`
-- Verify network access if using MongoDB Atlas
-
-### Port Already in Use
-- Backend uses port 5000, Frontend uses port 3000
-- Change ports in `.env` (backend) or `vite.config.js` (frontend)
-
-### CORS Errors
-- Ensure backend is running before frontend
-- Check API base URL in `client/src/utils/api.js`
-
-## 📄 License
-
-This project is open source and available under the MIT License.
 
 **Happy Booking! 🚌**
